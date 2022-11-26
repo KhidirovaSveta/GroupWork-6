@@ -3,3 +3,161 @@
 // @import "./button";
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;800&display=swap");
 
+body {
+  background-color: $bg-color;
+  font-family: "Epilogue", sans-serif;
+}
+
+#header {
+  background-color: $secondary-color;
+  padding: 10px 0;
+  .header {
+    @include flexBox(space-between, center);
+
+    nav {
+      ul {
+        @include flexBox(space-between);
+        list-style: none;
+        width: 515px;
+        li {
+          color: $color-white;
+        }
+      }
+    }
+    .contact-btn {
+      @extend %primary-button;
+    }
+    .menu {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    .header {
+      nav {
+        display: none;
+      }
+      .contact-btn {
+        display: none;
+      }
+      .menu {
+        display: block;
+      }
+    }
+  }
+}
+
+#project {
+  .container {
+    .project {
+      margin: auto;
+      width: 50%;
+      .backto {
+        margin-top: 39px;
+        display: flex;
+        column-gap: 14px;
+        a {
+          text-decoration: none;
+          color: $dark-text;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+      .media {
+        color: $dark-text;
+        h1 {
+          margin-top: 49px;
+          font-weight: 800;
+        }
+        .agency {
+          width: 80%;
+          margin-top: 22px;
+          line-height: 32px;
+        }
+        .outsource {
+          margin-top: 32px;
+          line-height: 32px;
+          color: rgba(57, 20, 0, 0.64);
+          font-size: 16px;
+        }
+      }
+      .category {
+        display: flex;
+        column-gap: 150px;
+        margin-top: 54px;
+        ul {
+          line-height: 32px;
+          h5 {
+            color: $primary-color;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            letter-spacing: 3px;
+          }
+        }
+        .client {
+            h5 {
+                margin-top: 7px;
+                color: $primary-color;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                letter-spacing: 3px;
+              }
+            img {
+                margin-bottom: 44px;
+            }
+            p {
+                margin-top: 22px;
+                font-size: 20px;
+            }  
+        }
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .project {
+          width:100%;
+        .category {
+            display: block;
+            .client {
+              margin-top: 48px;
+            }
+        }
+    }
+  }
+}
+}
+
+// Image
+#image {
+    .container{
+        img {
+            margin-top: 68px;
+            margin-bottom: 71px;
+        }
+    }
+}
+
+// Problem 
+
+#problem {
+    .container {
+        .text{
+            margin: 0 auto;
+            width: 50%;
+            color: $dark-text;
+            line-height: 32px;
+            h5 {
+                font-weight: 800;
+                font-size: 40px;
+                margin-bottom: 31px;
+            }
+            p { 
+                color: rgba(57, 20, 0, 0.64);
+                margin-bottom: 60px;
+            }
+            .ability {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
