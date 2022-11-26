@@ -160,7 +160,7 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
 }
@@ -331,4 +331,148 @@ body {
   #problem .container .text {
     width: 100%;
   }
+}
+
+#second-image .container .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  margin-top: 65px;
+  margin-bottom: 77px;
+}
+#second-image .container .main .left-img {
+  position: relative;
+  width: 50%;
+}
+#second-image .container .main .left-img .ph {
+  width: 98%;
+}
+#second-image .container .main .left-img .saat {
+  padding: 3 3px;
+  background-color: #825E4C;
+  position: absolute;
+  top: 392px;
+  left: 24px;
+  width: 47px;
+  height: 32px;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+}
+#second-image .container .main .left-img .play {
+  position: absolute;
+  left: 211px;
+  top: 150px;
+}
+#second-image .container .main .right-img {
+  width: 50%;
+}
+#second-image .container .main .right-img .photo {
+  margin-top: 30px;
+}
+#second-image .container .main .right-img .right {
+  margin-left: 30px;
+}
+@media only screen and (max-width: 992px) {
+  #second-image .container .main .main {
+    display: block;
+  }
+}
+
+.text-p {
+  width: 100px;
+  height: 24px;
+  margin: 0 auto;
+  font-size: 14px;
+  width: 65px;
+  height: 24px;
+  text-align: center;
+  color: #391400;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 65px;
+}
+.social-icons .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ef6d58;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.related {
+  margin: 0 auto;
+  padding: 72px 0 39px;
+  width: 1170px;
+  height: 32px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #391400;
+  border-top: 1px solid #F3D1BF;
+}
+
+.third-image .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.third-image .container .left {
+  border-radius: 6px;
+  position: relative;
+}
+.third-image .container .left button {
+  position: absolute;
+  top: 256px;
+  left: 48px;
+  width: 84px;
+  height: 38px;
+  font-size: 16px;
+  color: #391400;
+  border-radius: 19px;
+  border: none;
+  font-family: "Epilogue";
+}
+.third-image .container .left h2 {
+  position: absolute;
+  font-size: 40px;
+  top: 317px;
+  left: 48px;
+  color: white;
+  font-family: "Epilogue";
+  font-weight: 800;
+}
+.third-image .container .right {
+  border-radius: 6px;
+  position: relative;
+}
+.third-image .container .right button {
+  position: absolute;
+  top: 256px;
+  left: 48px;
+  width: 116px;
+  height: 38px;
+  font-size: 16px;
+  color: #391400;
+  border-radius: 19px;
+  border: none;
+  font-family: "Epilogue";
+}
+.third-image .container .right h2 {
+  position: absolute;
+  font-size: 40px;
+  top: 317px;
+  left: 48px;
+  color: white;
+  font-family: "Epilogue";
+  font-weight: 800;
 }/*# sourceMappingURL=main.css.map */

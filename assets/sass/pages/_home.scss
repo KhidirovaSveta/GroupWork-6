@@ -180,3 +180,239 @@ body {
             }
     }
 }
+
+
+//---------------------------------------------------------
+// // Second-image
+
+ #second-image{
+     .container{
+      .main{
+       @include flexBox();
+       column-gap: 30px;
+       margin-top: 65px;
+       margin-bottom: 77px;
+         .left-img{
+           position: relative;
+           width: 50%;
+           .ph{
+            width: 98%;
+           }
+           .saat{
+              padding: 3 3px;
+              background-color:  #825E4C;
+              position: absolute;
+              top: 392px;
+              left: 24px;
+              width: 47px;
+              height: 32px;
+              border-radius: 6px;
+              color: white;
+              font-size: 16px;
+
+            }
+           .play{
+            position: absolute;
+            left: 211px;
+            top: 150px;
+           }
+         }
+         .right-img{
+           width: 50%;
+           .photo{
+             margin-top: 30px;
+           }
+           .right{
+             margin-left: 30px;
+           }
+         }
+
+           @media only screen and (max-width: 992px) {
+              .main {
+                  display: block;
+                  
+              }
+            }
+          }
+     }
+
+}
+
+ .text-p{
+   width: 100px;
+   height: 24px;
+   margin: 0 auto ;
+   font-size: 14px;
+   width: 65px;
+    height: 24px;
+    text-align: center;
+    color: #391400;
+ }
+ .social-icons {
+   margin-top: 20px;
+   @include flexBox();
+   margin-bottom: 65px;
+
+   .icon {
+     width: 48px;
+     height: 48px;
+    border-radius: 50%;
+    background-color: $primary-color;
+     @include flexBox();
+     // margin: 0 0.25rem;
+     margin: 0 4px;
+  }
+ }
+
+.related{
+    margin: 0 auto;
+    padding: 72px 0 39px;
+    width: 1170px;
+    height: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #391400;
+    border-top: 1px solid #F3D1BF;
+}
+
+
+.third-image{
+  .container{
+    @include flexBox();
+    column-gap: 30px;
+    .left{
+      border-radius: 6px;
+      position: relative;
+      button{
+        position: absolute;
+        top: 256px;
+        left: 48px;
+        width: 84px;
+        height: 38px;
+        font-size: 16px;
+        color:#391400;
+        border-radius: 19px;
+        border: none;
+        font-family: 'Epilogue';
+      }
+      h2{
+        position: absolute;
+        font-size: 40px;
+        top: 317px;
+        left: 48px;
+        color: white;
+        font-family: 'Epilogue';
+        font-weight: 800;
+      }
+    }
+    .right {
+      border-radius: 6px;
+      position: relative;
+      button {
+        position: absolute;
+        top: 256px;
+        left: 48px;
+        width: 116px;
+        height: 38px;
+        font-size: 16px;
+        color: #391400;
+        border-radius: 19px;
+        border: none;
+        font-family: 'Epilogue';
+      }
+      
+      h2 {
+        position: absolute;
+        font-size: 40px;
+        top: 317px;
+        left: 48px;
+        color: white;
+        font-family: 'Epilogue';
+        font-weight: 800;
+      }
+    }
+     
+      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //---------------------------------------------------------
+// // // Second-image
+
+// // #second-image{
+// //     .container{
+// //       @include flexBox();
+// //       column-gap: 30px;
+// //       margin-top: 65px;
+// //       margin-bottom: 77px;
+
+// //         .left-img{
+// //           width: 50%;
+// //         }
+// //         .right-img{
+// //           width: 50%;
+// //           .photo{
+// //             margin-top: 30px;
+// //           }
+// //           .right{
+// //             margin-left: 30px;
+// //           }
+// //         }
+
+// //         //  @media only screen and (max-width: 992px) {
+// //         //     .container {
+// //         //         display: block;
+// //         //     }
+// //         //   }
+// //     }
+// // }
+
+// // .text-p{
+// //   width: 70px;
+// //   height: 24px;
+// //   margin: 0 auto;
+// // }
+// // .social-icons {
+// //   margin-top: -18px;
+// //   @include flexBox();
+
+// //   .icon {
+// //     width: 48px;
+// //     height: 48px;
+// //     border-radius: 50%;
+// //     background-color: $primary-color;
+// //     @include flexBox();
+// //     // margin: 0 0.25rem;
+// //     margin: 0 4px;
+// //   }
+// // }
