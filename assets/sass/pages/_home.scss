@@ -21,6 +21,10 @@ body {
         width: 515px;
         li {
           color: $color-white;
+          a {
+            text-decoration: none;
+            color: $color-white;
+          }
         }
       }
     }
