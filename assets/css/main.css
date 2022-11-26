@@ -294,6 +294,11 @@ body {
   margin-top: 68px;
   margin-bottom: 71px;
 }
+@media only screen and (max-width: 992px) {
+  #image img {
+    width: 100%;
+  }
+}
 
 #problem .container .text {
   margin: 0 auto;
@@ -312,4 +317,9 @@ body {
 }
 #problem .container .text .ability {
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 992px) {
+  #problem .container .text {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
