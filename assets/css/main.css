@@ -201,6 +201,10 @@ body {
 #header .header nav ul li {
   color: #fff;
 }
+#header .header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
 #header .header .menu {
   display: none;
 }
