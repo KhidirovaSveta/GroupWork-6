@@ -62,6 +62,7 @@ body {
           text-transform: uppercase;
           font-size: 12px;
           font-weight: 700;
+          margin-top: 2px;
         }
       }
       .media {
@@ -88,6 +89,9 @@ body {
         margin-top: 54px;
         ul {
           line-height: 32px;
+          li {
+            color: $dark-text;
+          }
           h5 {
             color: $primary-color;
             text-transform: uppercase;
@@ -97,7 +101,7 @@ body {
         }
         .client {
             h5 {
-                margin-top: 7px;
+                margin-top: 10px;
                 color: $primary-color;
                 text-transform: uppercase;
                 margin-bottom: 20px;
@@ -107,8 +111,9 @@ body {
                 margin-bottom: 44px;
             }
             p {
-                margin-top: 22px;
+                margin-top: 30px;
                 font-size: 20px;
+                color: $dark-text;
             }  
         }
       }
