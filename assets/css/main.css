@@ -231,6 +231,7 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
+  margin-top: 2px;
 }
 #project .container .project .media {
   color: #391400;
@@ -258,6 +259,9 @@ body {
 #project .container .project .category ul {
   line-height: 32px;
 }
+#project .container .project .category ul li {
+  color: #391400;
+}
 #project .container .project .category ul h5 {
   color: #ef6d58;
   text-transform: uppercase;
@@ -265,7 +269,7 @@ body {
   letter-spacing: 3px;
 }
 #project .container .project .category .client h5 {
-  margin-top: 7px;
+  margin-top: 10px;
   color: #ef6d58;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -275,8 +279,9 @@ body {
   margin-bottom: 44px;
 }
 #project .container .project .category .client p {
-  margin-top: 22px;
+  margin-top: 30px;
   font-size: 20px;
+  color: #391400;
 }
 @media only screen and (max-width: 992px) {
   #project .container .project {
