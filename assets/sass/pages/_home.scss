@@ -185,160 +185,247 @@ body {
 //---------------------------------------------------------
 // // Second-image
 
- #second-image{
-     .container{
-      .main{
-       @include flexBox();
-       column-gap: 30px;
-       margin-top: 65px;
-       margin-bottom: 77px;
-         .left-img{
-           position: relative;
-           width: 50%;
-           .ph{
-            width: 98%;
-           }
-           .saat{
-              padding: 3 3px;
-              background-color:  #825E4C;
-              position: absolute;
-              top: 392px;
-              left: 24px;
-              width: 47px;
-              height: 32px;
-              border-radius: 6px;
-              color: white;
-              font-size: 16px;
+// VIDEO SECTION
+#video {
+  margin-bottom: 77px;
 
-            }
-           .play{
-            position: absolute;
-            left: 211px;
-            top: 150px;
-           }
-         }
-         .right-img{
-           width: 50%;
-           .photo{
-             margin-top: 30px;
-           }
-           .right{
-             margin-left: 30px;
-           }
-         }
+  .container {
+    .main {
+      margin: 0 auto;
+      display: flex;
 
-           @media only screen and (max-width: 992px) {
-              .main {
-                  display: block;
-                  
-              }
-            }
+      .video {
+        position: relative;
+        width: 50%;
+
+        // margin-left: 30px;
+        img {
+          width: 97%;
+        }
+
+        .play {
+          position: absolute;
+          left: 200px;
+          top: 150px;
+        }
+
+        .time {
+          position: absolute;
+          bottom: 29px;
+          left: 33px;
+          z-index: 2;
+        }
+
+        .rectangle {
+          position: absolute;
+          bottom: 20px;
+          left: 24px;
+        }
+      }
+
+      .images {
+        padding-left: 25px;
+
+        .top {
+          margin-bottom: 30px;
+
+          img {
+            width: 45%;
+            padding-right: 25px;
           }
-     }
+        }
 
-}
+        .botton {
+          img {
+            width: 45%;
+            padding-right: 25px;
+          }
+        }
+      }
+    }
 
- .text-p{
-   width: 100px;
-   height: 24px;
-   margin: 0 auto ;
-   font-size: 14px;
-   width: 65px;
-    height: 24px;
-    text-align: center;
-    color: #391400;
- }
- .social-icons {
-   margin-top: 20px;
-   @include flexBox();
-   margin-bottom: 65px;
+    @media only screen and (max-width: 992px) {
+      .main {
+        display: block;
 
-   .icon {
-     width: 48px;
-     height: 48px;
-    border-radius: 50%;
-    background-color: $primary-color;
-     @include flexBox();
-     // margin: 0 0.25rem;
-     margin: 0 4px;
+        .video {
+          width: 100%;
+
+          .play{
+            position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%)
+          }
+          .rectangle{
+            position: absolute;
+            bottom: 20px;
+            left: 24px;
+            transform: translate(10%, 5%)
+          }
+        }
+
+        .images {
+          margin-top: 20px;
+          padding: 0;
+
+          .top {
+            margin: 0;
+            display: flex;
+          }
+
+          .botton {
+            margin-top: 20px;
+            display: flex;
+          }
+        }
+      }
+    }
   }
- }
-
-.related{
-    margin: 0 auto;
-    padding: 72px 0 39px;
-    width: 1170px;
-    height: 32px;
-    font-weight: 700;
-    font-size: 24px;
-    color: #391400;
-    border-top: 1px solid #F3D1BF;
 }
 
+// solution
 
-.third-image{
-  .container{
-    @include flexBox();
-    column-gap: 30px;
-    .left{
-      border-radius: 6px;
-      position: relative;
-      button{
-        position: absolute;
-        top: 256px;
-        left: 48px;
-        width: 84px;
-        height: 38px;
-        font-size: 16px;
-        color:#391400;
-        border-radius: 19px;
-        border: none;
-        font-family: 'Epilogue';
-      }
-      h2{
-        position: absolute;
-        font-size: 40px;
-        top: 317px;
-        left: 48px;
-        color: white;
-        font-family: 'Epilogue';
+#solution {
+  padding-bottom: 72px;
+
+  .container {
+    border-bottom: 1px solid #f3d1bf;
+
+    .text {
+      margin: 0 auto;
+      width: 50%;
+      color: $dark-text;
+      line-height: 32px;
+
+      h5 {
         font-weight: 800;
-      }
-    }
-    .right {
-      border-radius: 6px;
-      position: relative;
-      button {
-        position: absolute;
-        top: 256px;
-        left: 48px;
-        width: 116px;
-        height: 38px;
-        font-size: 16px;
-        color: #391400;
-        border-radius: 19px;
-        border: none;
-        font-family: 'Epilogue';
-      }
-      
-      h2 {
-        position: absolute;
         font-size: 40px;
-        top: 317px;
-        left: 48px;
-        color: white;
-        font-family: 'Epilogue';
-        font-weight: 800;
+        margin-bottom: 31px;
+      }
+
+      p {
+        color: rgba(57, 20, 0, 0.64);
+        margin-bottom: 65px;
+      }
+
+      .ability {
+        margin-bottom: 30px;
+      }
+
+      span {
+        padding-left: 250px;
+        color: rgba(57, 20, 0, 0.64);
+      }
+
+      .social-icon {
+        img {
+          padding-left: 210px;
+          margin-top: 24px;
+          padding-bottom: 64px;
+        }
       }
     }
-     
-      
+
+    @media only screen and (max-width: 992px) {
+      .text {
+        width: 100%;
+
+        span {
+          padding-left: 100px;
+        }
+
+        .social-icon {
+          img {
+            padding-left: 50px;
+          }
+        }
+      }
     }
+  }
 }
 
+//-----------
 
 
 
+
+
+
+
+
+
+
+
+
+
+// related-projects
+#related-projects {
+  padding-bottom: 160px;
+
+  .container {
+    h4 {
+      padding-bottom: 39px;
+      font-weight: 700;
+      font-size: 24px;
+      color: $dark-text;
+    }
+
+    .image {
+      
+      display: flex;
+      column-gap: 30px;
+
+      .left {
+        position: relative;
+        .sofa {
+          position: absolute;
+          left: 48px;
+          bottom: 51px;
+        }
+
+        .tag {
+          position: absolute;
+          left: 48px;
+          bottom: 123px;
+        }
+      }
+      .right{
+        position: relative;
+        .work-media {
+          position: absolute;
+          bottom: 51px;
+          left: 48px;
+        }
+
+        .tag2 {
+          position: absolute;
+          left: 48px;
+          bottom: 123px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 992px) {
+      .image {
+        display: block;
+
+        .left {
+          img {
+            width: 100%;
+          }
+        }
+
+        .right {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// help to build
 
 
 
@@ -390,29 +477,4 @@ body {
 // //         }
 
 // //         //  @media only screen and (max-width: 992px) {
-// //         //     .container {
-// //         //         display: block;
-// //         //     }
-// //         //   }
-// //     }
-// // }
 
-// // .text-p{
-// //   width: 70px;
-// //   height: 24px;
-// //   margin: 0 auto;
-// // }
-// // .social-icons {
-// //   margin-top: -18px;
-// //   @include flexBox();
-
-// //   .icon {
-// //     width: 48px;
-// //     height: 48px;
-// //     border-radius: 50%;
-// //     background-color: $primary-color;
-// //     @include flexBox();
-// //     // margin: 0 0.25rem;
-// //     margin: 0 4px;
-// //   }
-// // }
