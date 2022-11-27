@@ -425,8 +425,153 @@ body {
     }
   }
 }
+
+
+
 // help to build
 
+#help-to-build {
+  .container{
+    .color-block{
+      display: flex;
+      background-color: $primary-color;
+      color: $color-white;
+      .text {
+        width: 50%;
+        padding: 100px;
+        h2 {
+          font-weight: 800;
+          font-size: 56px;
+          line-height: 64px;
+          width: 100%;
+          padding-bottom: 28px;
+        }
+        p {
+          font-size: 16px;
+          line-height: 32px;
+          opacity: 0.6;
+          padding-bottom: 34px;
+        }
+        button {
+          @extend %primary-button;
+          background-color: $color-white;
+          color: black;
+        }
+      }
+      .img {
+        padding-right: 100px;
+        padding-top: 41px;
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .color-block{
+        flex-direction: column-reverse;
+        .text {
+          width: 100%;
+          padding-left: 10px;
+          h2 {
+            font-size: 40px;
+            line-height: 48px;
+           }
+        }
+        .img {
+          padding: 32px 50px 10px 50px ;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer
+
+#footer {
+  background-color: $bg-color;
+  .footer {
+      padding-top: 92px;
+      .footer-main {
+          padding-bottom: 68px;
+          @include flexBox(space-between, flex-start);
+          .logo {
+              color: $dark-text;
+              font-size: 1.5rem;
+              font-weight: 700;
+          }
+          .menu,
+          .services {
+              h5 {
+                  color: $primary-color;
+                  letter-spacing: 3px;
+                  font-size: 1rem;
+                  margin-bottom: 1rem;
+              }
+              ul {
+                  li {
+                      margin: 0.5rem 0;
+                      a {
+                          color: $dark-text;
+                          text-decoration: none;
+                      }
+                  }
+              }
+          }
+          @media only screen and (max-width: 992px) {
+              flex-direction: column;
+              align-items: center;
+              row-gap: 51px;
+              text-align: center;
+          }
+      }
+      .social-icons {
+          margin-top: -18px;
+          @include flexBox();
+          .icon {
+              width: 48px;
+              height: 48px;
+              border-radius: 50%;
+              background-color: $primary-color;
+              @include flexBox();
+              // margin: 0 0.25rem;
+              margin: 0 4px;
+          }
+      }
+      .footer-copyright {
+          border-top: 1px solid #f3d1bf;
+          @include flexBox(space-between);
+          p {
+              color: rgba(57, 20, 0, 0.64);
+              font-size: 16px;
+          }
+          .terms-privacy {
+              padding: 43px 0;
+              ul {
+                  display: flex;
+                  column-gap: 68px;
+                  li {
+                      a {
+                          color: $dark-text;
+                          font-size: 1rem;
+                          text-decoration: none;
+                      }
+                  }
+              }
+          }
+          @media only screen and (max-width: 992px) {
+              flex-direction: column;
+              align-items: center;
+
+              p {
+                  margin-top: 43px;
+              }
+          }
+      }
+      @media only screen and (max-width: 992px) {
+          // padding-top: 45px;
+      }
+  }
+}
 
 
 
@@ -453,28 +598,6 @@ body {
 
 
 
-// //---------------------------------------------------------
-// // // Second-image
 
-// // #second-image{
-// //     .container{
-// //       @include flexBox();
-// //       column-gap: 30px;
-// //       margin-top: 65px;
-// //       margin-bottom: 77px;
 
-// //         .left-img{
-// //           width: 50%;
-// //         }
-// //         .right-img{
-// //           width: 50%;
-// //           .photo{
-// //             margin-top: 30px;
-// //           }
-// //           .right{
-// //             margin-left: 30px;
-// //           }
-// //         }
-
-// //         //  @media only screen and (max-width: 992px) {
 
